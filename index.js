@@ -1,14 +1,15 @@
 "use strict";
 const express = require("express");
 const createRoutes = require("./router/index");
-var cors = require('cors')
-
+const cors = require('cors')
+const bodyParser = require('body-parser')
 const path = require("path");
 
 
 let app = express();
 
-app.use(cors())
+app.use(cors());
+app.use(bodyParser());
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
 

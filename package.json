@@ -9,7 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.14.1",
-    "pug": "^2.0.0-beta11"
+    "lodash": "^4.17.4",
+    "mjml": "^3.2.2",
+    "pug": "^2.0.0-beta11",
+    "sparkpost": "^2.1.2"
   }
 }
