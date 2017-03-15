@@ -1,0 +1,12 @@
+extends ../index
+block content
+    h1 Posts
+
+    ul
+        each post in posts
+            li
+                h2 Title: #{post.title}
+                h5 #{post.author}
+                p #{post.text}
+                a.btn.btn-primary(href="/post/"+post._id)
+                    | Edit

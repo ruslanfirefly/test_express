@@ -1,0 +1,18 @@
+extends  ../index.pug
+
+block content
+
+    h1 Create Post
+    form(style="width:200px; border: 1px solid #c6c6c6; margin-left:20px; padding:5px", method="POST")
+        div.form-group
+            label(for="title") title
+            input.form-control#title(name="title")
+        div.form-group
+            label(for="author") author
+            input.form-control#author(name="author")
+        div.form-group
+            label(for="text") Text
+            textarea.form-control#text(name="text")
+
+        div.form-group
+            button.btn.btn-primary(type="submit") submit

@@ -4,9 +4,10 @@ const handlers  = require("./handlers");
 function createRoute(app) {
 
   app.get("/", handlers.indexPage);
-  app.get("/folder", handlers.folderAction)
-  app.get("/send_letter", handlers.sendLetter);
-  app.post("/send_letter", handlers.sendLetterPost);
+  app.get("/create-post", handlers.createAction);
+  app.post("/create-post", handlers.createActionPost);
+  app.get("/post/:id", handlers.editPost)
+  app.post("/post/:id", handlers.editPostPost)
   return app
 }
 
